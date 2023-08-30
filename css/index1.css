@@ -1,0 +1,126 @@
+/* header */
+.header{
+    display: flex;
+    justify-content: space-around;
+    height: 55px;
+    background-color: rgb(247, 245, 242);
+}
+
+.menu1{
+   position: relative;
+   right: 160px;
+}
+.menu2{
+    position: relative;
+    left: 90px;
+}
+.icon{
+    color: orange;
+}
+
+.menu_item{
+    display: inline-flex;
+    list-style-type: none;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+.content:hover{
+    color: rgb(232, 164, 38);
+}
+
+.content{
+    margin-left: 10px;
+}
+.shopper::first-letter{
+    color: orange;
+}
+
+.select_option{
+    height: 25px;
+    position: relative;
+    bottom: 7px;
+
+}
+.select_option:hover{
+    color: orange;
+}
+.select_option_menu{
+    border: none;
+}
+.select_option_menu:hover{
+    color: orange;
+}
+
+
+/* container */
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_detail{
+    display: inline-flex;
+    margin-top: 40px;
+    margin-left: 30px;    
+}
+
+.menu_detail:hover{
+    color: orange;
+}
+
+.search input{
+    margin-top: 40px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: rgb(247, 249, 251);
+    padding-left: 10px;
+}
+
+.icon_search{
+    position: relative;
+    right: 40px;
+    top: 3px;
+    color: grey;
+    padding: 3px 9px;
+    background-color: rgb(247, 249, 251);}
+
+/* nav_bar */
+.nav_bar{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+.main{
+    width: 50%;
+    
+}
+
+.main_details{
+    width: 400px;
+    position: relative;
+    top: 70px;
+    left: 150px;
+    color: grey;
+}
+.size{
+    width: 50%;
+    height: 500px;
+    background: url(../image/picture_shopping.png);
+    background-size: cover;
+}
+
+h1::first-letter{
+    color: orange;
+}
+h5{
+    color: black;
+    font-size: larger;
+}
+.button{
+    margin-top: 30px;
+    border: none;
+    padding: 5px 20px;
+    background-color: orange;
+    color: white;
+
+}
