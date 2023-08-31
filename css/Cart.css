@@ -31,7 +31,7 @@ thead th:nth-child(3) {
 }
 
 .picture {
-    width: 150px;
+    background-size: contain;
 }
 
 .title {
@@ -40,12 +40,13 @@ thead th:nth-child(3) {
 }
 
 tbody tr {
-    border: 1px solid black;
+    border: 1px solid rgb(221, 219, 219);
     height: 200px;
 }
 
 tbody tr td {
     padding-left: 50px;
+    margin-top: 20px;
 }
 
 tbody tr td:first-child {
@@ -60,26 +61,62 @@ tbody tr td:first-child {
     flex-direction: column;
     justify-content: center;
 }
-
+/* button quantity */
+.buttons_added {
+    opacity:1;
+    display:inline-block;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    white-space:nowrap;
+    vertical-align:top;
+}
+.is-form {
+    overflow:hidden;
+    position:relative;
+    background-color:#f9f9f9;
+    height: 60px;
+    width:1.9rem;
+    padding:0;
+    text-shadow:1px 1px 1px #fff;
+    border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
+}
+.is-form.minus {
+    border-radius:4px 0 0 4px;
+}
+.is-form.plus {
+    border-radius:0 4px 4px 0;
+}
 .input-qty {
-    width: 100px;
-    padding: 10px 20px 10px 20px;
+    background-color:#fff;
+    height: 60px;
+    width: 70px;
+    text-align:center;
+    font-size:1rem;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border: 1px solid black;
+    padding:0;
 }
-
-tbody tr td:nth-child(3) input[type="button"] {
-    padding: 10px 20px 10px 20px;
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
 }
-
-tbody tr td:last-child p {
-    display: inline;
-    color: orange;
-    margin-right: 20px;
-
+.button{
+    border: none;
+    margin-left: 30px;
 }
-
-tbody tr td:last-child button {
-    background-color: gray;
+.icon{
+    border: none;
     color: white;
-    padding: 10px;
-    font-size: 30px;
+    padding: 10px 15px;
+    background-color: gray;
+}
+
+.total{
+    color: orange;
+    font-weight: bolder;
 }
